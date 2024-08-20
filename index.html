@@ -8,13 +8,13 @@
 <body>
   <div id="inicio">
     <h1>Introdução HTML</h1>
-  <ul>
-    <li>Estrutura de um Documento HTML</li>
-    <li>O que são Tags em HTML</li>
-    <li>O que são Atributos em HTML</li>
-    <li>Listas Ordenadas e Não Ordenadas</li>
-    <li>Links em HTML</li>
-  </ul>
+      <ol>
+        <li>Estrutura de um Documento HTML</li>
+        <li>O que são Tags em HTML</li>
+        <li>O que são Atributos em HTML</li>
+        <li>Listas Ordenadas e Não Ordenadas</li>
+        <li>Links em HTML</li>
+      </ol>
   </div>
   
   <div id="estruturaHTML">
@@ -29,13 +29,13 @@
         &lt;/head&gt;<br>
         &lt;body&gt;<br>
         &lt;/body&gt;<br>
-      &lt;/html&gt;<br>
+        &lt;/html&gt;<br>
     </code>
-    <p>A tag <html> contém todas as informações do documento HTML.</p>
-    <p>É importante ressaltar que as tags sempre começam com < > e terminam com </>. O / é utilizado para indicar o final de uma tag, ajudando a manter a organização do código.</p>
-    <p>A tag <head> contém todas as informações sobre o site, como o título do documento HTML e outros metadados. Abaixo, você verá um exemplo de uma estrutura mais robusta de um documento HTML.</p>
-    <p>A tag <body> contém todo o conteúdo da página do seu site. É a parte que o usuário verá ao acessar a página.</p>
-    <p>É comum, ao criar um projeto HTML, nomear o arquivo principal como index.html. Essa prática é amplamente utilizada entre desenvolvedores para indicar o início ou a página principal de um site. No entanto, isso não é obrigatório e depende da sua escolha ou das necessidades do seu projeto.</p>
+          <p>A tag <html> contém todas as informações do documento HTML.</p>
+          <p>É importante ressaltar que as tags sempre começam com < > e terminam com </>. O / é utilizado para indicar o final de uma tag, ajudando a manter a organização do código.</p>
+          <p>A tag <head> contém todas as informações sobre o site, como o título do documento HTML e outros metadados. Abaixo, você verá um exemplo de uma estrutura mais robusta de um documento HTML.</p>
+          <p>A tag <body> contém todo o conteúdo da página do seu site. É a parte que o usuário verá ao acessar a página.</p>
+          <p>É comum, ao criar um projeto HTML, nomear o arquivo principal como index.html. Essa prática é amplamente utilizada entre desenvolvedores para indicar o início ou a página principal de um site. No entanto, isso não é obrigatório e depende da sua escolha ou das necessidades do seu projeto.</p>
     </div>
 
     <div id="exemploCódigoRobusto">
@@ -53,17 +53,98 @@
         &lt;/body&gt;<br>
         &lt;/html&gt;<br>
       </code>
+      
       <h3>Novas Tags e Atributos no HTML</h3>
-      <h4>&lt;!DOCTYPE html&gt;</h4>
-      <p>A declaração <!DOCTYPE html> é a primeira linha de código em um documento HTML e serve para informar ao navegador que o documento está escrito em HTML5. Essa declaração é essencial, pois garante que o navegador interprete o código corretamente de acordo com as normas do HTML5.</p>
+        <h4>&lt;!DOCTYPE html&gt;</h4>
+          <p>A declaração <!DOCTYPE html> é a primeira linha de código em um documento HTML e serve para informar ao navegador que o documento está escrito em HTML5. Essa declaração é essencial, pois garante que o navegador interprete o código corretamente de acordo com as normas do HTML5.</p>
       
       <h4>&lt;meta charset=&quot;UTF-8&quot;&gt;</h4>
-      <p>A tag <meta charset="UTF-8"> especifica a codificação de caracteres usada no documento HTML. O valor UTF-8 é o mais comum e suporta uma ampla gama de caracteres, incluindo letras, números e símbolos de diferentes idiomas. Isso garante que o conteúdo do site seja exibido corretamente, independentemente do idioma ou dos caracteres utilizados</p>
+        <p>A tag <meta charset="UTF-8"> especifica a codificação de caracteres usada no documento HTML. O valor UTF-8 é o mais comum e suporta uma ampla gama de caracteres, incluindo letras, números e símbolos de diferentes idiomas. Isso garante que o conteúdo do site seja exibido corretamente, independentemente do idioma ou dos caracteres utilizados</p>
 
-      <h4></h4>
+      <h4>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</h4>
+        <p>A tag <meta name="viewport"> é crucial para garantir que o layout do seu site seja responsivo, ou seja, que ele se adapte corretamente a diferentes tamanhos de tela, como em dispositivos móveis. O atributo content="width=device-width, initial-scale=1.0" indica ao navegador que a largura da viewport deve ser igual à largura do dispositivo e que o nível de zoom inicial é 1.0, ou seja, sem zoom.</p>
 
-
-    </div>
+      <h4>&lt;title&gt;Document&lt;/title&gt;</h4>
+        <p>A tag &lt;title&gt; define o título do documento HTML, que é exibido na aba do navegador ou na barra de título da janela. Este título é importante tanto para a experiência do usuário quanto para a otimização de mecanismos de busca (SEO), pois ele aparece nos resultados de pesquisa.</p>
+      
+        </div>
   </div>
+
+  <div>
+    <h2>O que são Tags em HTML</h2>
+      <h3>Tags em HTML:</h3>
+        <p>Tags são comandos em HTML que servem para adicionar e estruturar elementos em um documento. Existem tags para texto, imagens, links e muitos outros elementos que ajudam a compor o conteúdo de uma página web.</p>
+
+      <h3>Tipos de Tags</h3>
+        <h4>Texto</h4>
+          <p>As tags de texto em HTML são variadas, permitindo a formatação e a organização do conteúdo textual de diferentes maneiras. A seguir, alguns exemplos importantes:</p>
+            <ul>
+              
+              <li>Tag &lt;h1&gt;; até &lt;h6&gt;;</li>
+                <ul>
+                  <li>Utilizadas para criar títulos e subtítulos.</li>
+                  <li>&lt;h1&gt; é o título principal e de maior destaque, enquanto &lt;h6&gt; é o de menor destaque.</li>
+                  <li>Quanto maior o número, menor é o tamanho e a importância do título.</li>
+                  <li>Exemplo:</li>
+                  <p>&lt;h1&gt;Este é um Título Principal&lt;/h1&gt;
+                    <br>&lt;h2&gt;Este é um Subtítulo&lt;/h2&gt;</p>
+                </ul>
+                
+              <li>Tag &lt;p&gt;:</li>
+                <ul>
+                  <li>Utilizada para adicionar parágrafos ao documento.</li>
+                  <li>Exemplo:</li>
+                  <p>&lt;p&gt;Este é um parágrafo de texto.&lt;/p&gt;</p>
+                </ul>
+              
+              <li></li>  
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <p></p>
+                </ul>
+              
+              <li></li>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <p></p>
+                </ul>
+
+              <li></li>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <p></p>
+                </ul>
+                  
+              <li></li>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <p></p>
+                </ul>
+                
+              <li></li>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <p></p>
+                </ul>
+
+              <li></li>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <p></p>
+                </ul>
+            </ul>
+
+
+
+
+
+  </div>
+
 </body>
 </html>
