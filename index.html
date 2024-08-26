@@ -1,3 +1,20 @@
+<!--
+Entendendo o Desafio
+ 
+A ideia deste Desafio de Projeto é elaborar um website, utilizando uma estrutura bem básica, utilizando tags aprendidas durante as aulas práticas:
+ 
+Utilizar todas as tags explicadas nas aulas: <h1> até <h6>, <p>, <mark>, <small>, <i>, <u>, <strong>, <ol>, <ul>, <li>, <a>, <hr>, <sub>, <sup>, <blockquote>;
+Utilizar novas tags sugeridas: <font>, <del>, <p>, <abbr> (a ideia é buscar estas tags na internet, entender como ela funciona e utilizar no texto).
+GitHub
+Todo código-fonte desenvolvido durante o curso foi versionado no GitHub, no seguinte endereço:
+https://github.com/digitalinnovationone/trilha-html-modulo-1
+ 
+Dúvidas sobre como usar o Github?
+Veja essa aula com o expert Felipe Aguiar, clicando aqui.
+ 
+Bons estudos wink
+-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,16 +26,17 @@
   <div id="inicio">
     <h1>Introdução HTML</h1>
       <ol>
-        <li>Estrutura de um Documento HTML</li>
-        <li>O que são Tags em HTML</li>
-        <li>O que são Atributos em HTML</li>
-        <li>Listas Ordenadas e Não Ordenadas</li>
-        <li>Links em HTML</li>
+        <li><a href="#estruturaHTML">Estrutura de um Documento HTML</a></li>
+        <li><a href="#sobreHTML">O que são Tags em HTML</a></li>
+        <li><a href="#atributosHTML">O que são Atributos em HTML</a></li>
+        <li><a href="#oqueECSS">O que é CSS</a></li>
+        <li><a href="#ordenadasENaoOrdenadas">Listas Ordenadas e Não Ordenadas</a></li>
+        <li><a href="#linkHTML">Links em HTML</a></li>
       </ol>
   </div>
   
   <div id="estruturaHTML">
-    <h2>Estrutura de um Documento HTML</h2>
+    <h2 id="estruturaHTML">Estrutura de um Documento HTML</h2>
     <p>A estrutura de um documento HTML é composta por três elementos principais: html, head e body.</p>
     
     <div id="exemploCódigoSimples">
@@ -70,8 +88,8 @@
         </div>
   </div>
 
-  <div>
-    <h2>O que são Tags em HTML</h2>
+  <div id="HTML">
+    <h2 id="sobreHTML">O que são Tags em HTML</h2>
       <h3>Tags em HTML:</h3>
         <p>Tags são comandos em HTML que servem para adicionar e estruturar elementos em um documento. Existem tags para texto, imagens, links e muitos outros elementos que ajudam a compor o conteúdo de uma página web.</p>
 
@@ -164,8 +182,8 @@
       </ul>
   </div>
 
-  <div id="Atributos">
-    <h2>O que são Atributos em HTML</h2>
+  <div>
+    <h2 id="atributosHTML">O que são Atributos em HTML</h2>
       <h3>Atributos:</h3>
         <p>Atributos em HTML são usados para fornecer informações adicionais sobre um elemento. Eles são inseridos dentro da tag de abertura de um elemento e são compostos por um nome de atributo e um valor atribuído a ele. Atributos podem controlar a aparência, o comportamento e o conteúdo de um elemento HTML.</p>
 
@@ -214,13 +232,13 @@
                 </ul>
             </ul>
   </div>
-  <div id="Css">
-    <h3>O que é CSS?</h3>
+  <div>
+    <h2 id="oqueECSS">O que é CSS?</h2>
         <p>CSS (Cascading Style Sheets) é uma linguagem usada para descrever a apresentação de um documento escrito em HTML ou XML. CSS define como os elementos HTML devem ser exibidos na tela, em papel ou em outros meios. Ele permite a separação entre o conteúdo do documento (HTML) e sua apresentação visual, tornando o código mais limpo e fácil de manter.</p>        
   </div>
 
-  <div id="Listas">
-    <h3>Listas Ordenadas e Não Ordenadas</h3>
+  <div>
+    <h2 id="ordenadasENaoOrdenadas">Listas Ordenadas e Não Ordenadas</h2>
         <p>Em HTML, existem dois tipos principais de listas que você pode usar para organizar informações: listas ordenadas e listas não ordenadas.</p>
       
         <h4>Listas Ordenadas</h4>
@@ -275,17 +293,93 @@
       <p>Exemplo de Lista Aninhada:</p>
       <p>
         <code>
-          &lt;ol>
-          &lt;li>Item Principal 1
-          &lt;ul>
-          &lt;li>Subitem 1.1&lt;/li>
-          &lt;li>Subitem 1.2&lt;/li>
-          &lt;/ul>
-          &lt;/li>
-          &lt;li>Item Principal 2&lt;/li>
+          &lt;ol&gt;
+          &lt;li&gt;Item Principal 1
+          &lt;ul&gt;
+          &lt;li>Subitem 1.1&lt;/li&gt;
+          &lt;li>Subitem 1.2&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li>Item Principal 2&lt;/li&gt;
           &lt;/ol>
         </code>
       </p>
+      <p>Nesse exemplo, a lista será apresentada como:</p>
+      <ol>
+        <li>Item Principal 1
+          <ul>
+            <li>Subitem 1.1</li>
+            <li>Subitem 1.2</li>
+          </ul>
+        </li>
+        <li>Item Principal 2</li>
+      </ol>
+  </div>
+
+  <div>
+    <h2 id="linkHTML">Links em HTML</h2>
+      <h3>Tag &lt;a> (Anchor)</h3>
+        <ul>
+          <li>A tag &lt;a> em HTML é usada para criar links, também conhecidos como hiperlinks, que permitem a navegação entre diferentes páginas da web, seções dentro da mesma página, ou para abrir outros recursos, como arquivos e documentos.</li>
+          <li>A tag &lt;a> geralmente é conhecida como "anchor" (âncora) porque cria um ponto de referência (âncora) que pode ser acessado clicando no link.</li>
+        </ul>
+      <h3>Atributos da Tag &lt;a></h3>
+        <ol>
+          <h4><li>Atributo href</li></h4>
+            <ul>
+              <li>O atributo href (Hypertext REFerence) define o destino do link, ou seja, a URL (Uniform Resource Locator) para a qual o usuário será direcionado ao clicar no link.</li>
+              <li>Exemplo:</li>
+              <p>Nesse exemplo, o link direciona o usuário para o site "www.google.com.br" ao ser clicado.</p>
+              <a href="https://www.google.com.br/">Visitar o Google</a>
+              <p>Código:</p>
+              <p>
+                <code>
+                  &lt;a href="https://www.google.com.br/"&gt;Visite o Google&&lt;/a&gt;
+                </code>
+              </p>
+            </ul>
+          <h3><li>Atributo target</li></h3>
+            <ul>
+              <li>O atributo target especifica onde o link deve ser aberto. Os valores comuns para este atributo incluem:</li>
+                <ul>
+                  <li><strong>_self:</strong> Abre o link na mesma aba ou janela. Este é o valor padrão.</li>
+                  <li><strong>_blank:</strong> Abre o link em uma nova aba ou janela do navegador.</li>
+                </ul>
+              <p>Exemplos:</p>
+              <p>
+                <code>
+                  <p>Abre na mesma aba</p>
+                  <a href="<https://www.exemplo.com>" target="_self">Abrir na mesma aba</a>
+
+                  <p>Abre em uma nova aba</p>
+                    <a href="<https://www.exemplo.com>" target="_blank">Abrir em uma nova aba</a>
+                </code>
+              <p>Codigo:</p>
+              <p>
+                <code>
+                  &lt;!-- Abre na mesma aba --&lt;<br>
+                    &lt;a href="https://www.exemplo.com"&gt; target="_self">Abrir na mesma aba&lt;/a&lt;
+                  <br><br>
+                  &lt;!-- Abre em uma nova aba --&lt;<br>
+                    &lt;a href="https://www.exemplo.com"&lt; target="_blank">Abrir em uma nova aba&lt;/a&lt;
+                </code>
+              </p>
+              </p>
+            </ul>
+          <h3><li>Atributo title</li></h3>
+            <ul>
+              <li>O atributo title fornece uma dica ou descrição do link, que é exibida como um texto de tooltip quando o usuário passa o cursor sobre o link.</li>
+              <li>Exemplo:</li>
+              <p>Neste caso, quando o usuário passar o mouse sobre o link, aparecerá a mensagem "Ir para o site Exemplo".</p>
+            </ul>
+            <a href="<https://www.exemplo.com>" title="Ir para o site Exemplo">Visite o Exemplo</a>
+            <p>Código:</p>
+            <p>
+              <code>
+                &lt;a href="https://www.exemplo.com"&gt; title="Ir para o site Exemplo">Visite o Exemplo&lt;/a&gt;
+              </code>
+            </p>
+        </ol>
   </div>
 </body>
 </html>
