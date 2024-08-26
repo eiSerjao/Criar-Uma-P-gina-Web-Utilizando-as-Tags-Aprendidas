@@ -213,15 +213,79 @@
                   <p>&lt;img src="imagem.jpg" alt="Descrição da imagem" width="300px"&gt;</p>
                 </ul>
             </ul>
+  </div>
+  <div id="Css">
+    <h3>O que é CSS?</h3>
+        <p>CSS (Cascading Style Sheets) é uma linguagem usada para descrever a apresentação de um documento escrito em HTML ou XML. CSS define como os elementos HTML devem ser exibidos na tela, em papel ou em outros meios. Ele permite a separação entre o conteúdo do documento (HTML) e sua apresentação visual, tornando o código mais limpo e fácil de manter.</p>        
+  </div>
 
-      <h3>O que é CSS?</h3>
-        <p>CSS (Cascading Style Sheets) é uma linguagem usada para descrever a apresentação de um documento escrito em HTML ou XML. CSS define como os elementos HTML devem ser exibidos na tela, em papel ou em outros meios. Ele permite a separação entre o conteúdo do documento (HTML) e sua apresentação visual, tornando o código mais limpo e fácil de manter.</p>
-        
-
-      <h3>Listas Ordenadas e Não Ordenadas</h3>
+  <div id="Listas">
+    <h3>Listas Ordenadas e Não Ordenadas</h3>
         <p>Em HTML, existem dois tipos principais de listas que você pode usar para organizar informações: listas ordenadas e listas não ordenadas.</p>
+      
+        <h4>Listas Ordenadas</h4>
+          <ul>
+            <li>As listas ordenadas são aquelas onde os itens são apresentados em uma sequência numerada.</li>
+            <li>Cada item da lista é numerado automaticamente pelo navegador, começando do número 1 e continuando de forma crescente.</li>
+            <li>Tag &lt;ol&gt;: É usada para criar uma lista ordenada.</li>
+            <li>Tag &lt;li&gt;: Cada item dentro de uma lista (ordenada ou não) é representado pela tag &lt;li&gt;.</li>
+            <p>Exemplo de Lista Ordenada:</p>
+            <p><code>
+              &lt;ol&gt;<br>
+                &lt;li&gt;Primeiro item&lt;/li&gt;<br>
+                &lt;li&gt;Segundo item&lt;/li&gt;<br>
+                &lt;li&gt;Terceiro item&lt;/li&gt;<br>
+                &lt;/ol&gt;
+            </code></p>
+          </ul>
+            <p>Nesse exemplo, o navegador irá exibir a lista como:</p>
+            <ol>
+              <li>Primeiro item</li>
+              <li>Segundo item</li>
+              <li>Terceiro item</li>
+            </ol>
+        
+        <h4>Listas Não Ordenadas</h4>
+          <ul>
+            <li>As listas não ordenadas são aquelas onde os itens não possuem uma ordem específica, e, em vez de números, são representados por marcadores (geralmente pontos).</li>
+            <li>Tag &lt;ul>: É usada para criar uma lista não ordenada.</li>
+            <li>Tag &lt;li>: Assim como em listas ordenadas, cada item da lista é representado pela tag &lt;li>.</li>
+            <p>Exemplo de Lista Não Ordenada:</p>
+            <p>
+              <code>
+                &lt;ul&gt;<br>
+                &lt;li&gt;Primeiro item&lt;/li&gt;<br>
+                &lt;li&gt;Segundo item&lt;/li&gt;<br>
+                &lt;li&gt;Terceiro item&lt;/li&gt;<br>
+                &lt;/ul&gt;
+            </code>
+          </p>
+          </ul>
+            <p>Nesse exemplo, o navegador irá exibir a lista com pontos:</p>
+            <ul>
+              <li>Primeiro item</li>
+              <li>Segundo item</li>
+              <li>Terceiro item</li>
+            </ul>
 
-
+    <h3>Listas Aninhadas</h3>
+      <ul>
+        <li>Você pode aninhar listas, ou seja, colocar uma lista dentro de outra. Isso é útil para representar subcategorias ou subtópicos dentro de uma lista principal.</li>
+      </ul>
+      <p>Exemplo de Lista Aninhada:</p>
+      <p>
+        <code>
+          &lt;ol>
+          &lt;li>Item Principal 1
+          &lt;ul>
+          &lt;li>Subitem 1.1&lt;/li>
+          &lt;li>Subitem 1.2&lt;/li>
+          &lt;/ul>
+          &lt;/li>
+          &lt;li>Item Principal 2&lt;/li>
+          &lt;/ol>
+        </code>
+      </p>
   </div>
 </body>
 </html>
